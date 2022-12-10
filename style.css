@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-weight: 400;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background: hsl(229, 57%, 11%);
+}
+    /* Main Div area starts */
+.mainDiv{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Design/bg-desktop.png);
+    background-position: top 100% left 0;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+    /* Main Div area ends */
+
+    /* center Div area starts */
+.centerDiv-warp{
+    width: 67%;
+    height: 20%;
+    margin-top: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    /* center Div area ends */
+
+    /* left Div area starts */
+.leftDiv{
+    width: 30%;
+    height: 93%;
+    border-radius: 10px 70px 10px 10px;
+    background: hsl(228, 56%, 26%);
+    margin-top: 1.6%;
+}
+.logo{
+    width: 110px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 35px;
+}
+.icons{
+    display: flex;
+    margin-left: 11px;
+    margin-top: 24px;
+}
+.icons > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(229, 57%, 11%);
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    border-radius: 10px;
+}    
+
+    /* left Div area ends */
+
+    /* right Div area starts */
+.rightDiv{
+    width: 67%;
+    height: 75%;
+    border-radius: 10px;
+    margin-top: 45px;
+    background: hsl(228, 56%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.rightDiv-warp{
+    width: 90%;
+    height: 70%;
+    margin-top: 5%;
+}
+.headDiv{
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    color: hsl(228, 7%, 71%);
+}
+.headDiv > h3 > strong{
+    color: #fff;
+    font-weight: 700;
+}
+.emptyStorageDiv{
+    background: hsl(229, 57%, 11%);
+    width: 96%;
+    height: 17%;
+    border-radius: 10px;
+    position: relative;
+    border: 2px solid hsl(229, 57%, 11%);
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.fllledDiv{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 74%;
+    height: 100%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%) ,hsl(335, 100%, 65%));
+    border-radius: 10px;
+}
+.dotDiv{
+    position: absolute;
+    top: 1px;
+    left: 97%;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #fff;
+}
+.storageDetailDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin-top: 8px;
+}
+.storageDetailDiv > p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+}
+.storageUsageText{
+    position: absolute;
+    width: 140px;
+    height: 55px;
+    top: -30%;
+    left: 67%;
+    background: #fff;
+    border-radius: 10px 10px 0px 10px;
+}
+.textFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6%;
+}
+.p1{
+    font-weight: 700;
+    font-size: 30px;
+    margin-right: 9%;
+}
+.p2{
+    font-weight: 700;
+    font-size: 10px;
+    color: hsl(229, 7%, 55%);
+    margin-top: 3%;
+}
+.triangle{
+    position: absolute;
+    border: 10px solid hsl(228, 56%, 26%);
+    top: 100%;
+    left: 85.5%;
+    border-top-color: #fff;
+    border-right-color: #fff;
+}
+    /* right Div area ends */
+
+@media screen and (max-width: 375px) {
+        /* Main Div area starts */
+    .mainDiv{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Design/bg-mobile.png);
+    background-position: top 100% left 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    /* Main Div area ends */
+
+    /* center Div area starts */
+    .centerDiv-warp{
+    width: 85vw;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    /* center Div area ends */
+
+    /* left Div area starts */
+    .leftDiv{
+    width: 100%;
+    height: 65%;
+    border-radius: 10px 80px 10px 10px;
+    background: hsl(228, 56%, 26%);
+}
+    .logo{
+    width: 130px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 35px;
+}
+    .icons{
+    display: flex;
+    margin-left: 7px;
+    margin-top: 24px;
+}
+    .icons > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(229, 57%, 11%);
+    width: 48px;
+    height: 48px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+    /* left Div area ends */
+   
+    /* right Div area starts */
+    .rightDiv{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    background: hsl(228, 56%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    }
+    .rightDiv-warp{
+        width: 82%;
+        height: 65%;
+        margin-top: 5%;
+        text-align: center;
+    }
+    .headDiv{
+        display: block;
+        font-weight: 700;
+        font-size: 12px;
+        color: hsl(228, 7%, 71%);
+    }
+    .headDiv > h3{
+        margin-bottom: 12px;
+    }
+    .headDiv > h3 > strong{
+        color: #fff;
+        font-weight: 700;
+    }
+    .emptyStorageDiv{
+        background: hsl(229, 57%, 11%);
+        width: 96%;
+        height: 17%;
+        border-radius: 10px;
+        position: relative;
+        border: 2px solid hsl(229, 57%, 11%);
+        overflow: hidden;
+        margin-bottom: 8px;
+    }
+    .fllledDiv{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 74%;
+        height: 100%;
+        background: linear-gradient(to right, hsl(6, 100%, 80%) ,hsl(335, 100%, 65%));
+        border-radius: 10px;
+    }
+    .dotDiv{
+        position: absolute;
+        top: 2px;
+        left: 94.6%;
+        width: 8px;
+        height:8px;
+        border-radius: 50%;
+        background: #fff;
+    }
+    .storageDetailDiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 96%;
+    }
+    .storageDetailDiv > p{
+        color: #fff;
+        font-weight: 700;
+        font-size: 12px;
+    }
+    .storageUsageText{
+        position: absolute;
+        width: 186px;
+        height: 79px;
+        top: 79%;
+        left: 18%;
+        background: #fff;
+        border-radius: 10px;
+    }
+    .textFlex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6%;
+    }
+    .p1{
+        font-weight: 700;
+        font-size: 47px;
+        margin-right: 5%;
+    }
+    .p2{
+        font-weight: 700;
+        font-size: 13px;
+        color: hsl(229, 7%, 55%);
+        margin-top: 3%;
+    }
+    .triangle{
+        display: none;
+    }
+    /* right Div area ends */
+}
